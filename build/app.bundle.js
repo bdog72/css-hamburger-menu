@@ -9496,49 +9496,20 @@ module.exports = function (regExp, replace) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
-var _myModule = __webpack_require__(334);
-
-var bozo = _interopRequireWildcard(_myModule);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
 // const person = require("./myModule1");
 
-// import { person } from "./myModule1";
+// // import { person } from "./myModule1";
 
-// import { person, sayHello } from "./myModule1";
+// // import { person, sayHello } from "./myModule1";
 
-console.log(bozo.person.name);
+// import * as bozo from "./myModule1";
+// import hello1 from "./myModule1";
+// console.log(bozo.person.name);
 
-console.log(bozo.sayHello());
+// console.log(bozo.sayHello());
 
-console.log(bozo.default);
+// console.log(hello1);
 
-/***/ }),
-/* 334 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.sayHello = sayHello;
-var person = exports.person = {
-  name: "Molly Moo",
-  age: 6
-};
-
-function sayHello() {
-  return "Hello " + person.name;
-}
-
-var hello = "Hello World Bozo Beak";
-
-exports.default = hello;
 
 /***/ })
 /******/ ]);
