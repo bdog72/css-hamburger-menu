@@ -1,13 +1,11 @@
-// const person = require("./myModule1");
+import { http } from "./http";
+import { ui } from "./ui";
 
-// // import { person } from "./myModule1";
+document.addEventListener("DOMContentLoaded", getPosts);
 
-// // import { person, sayHello } from "./myModule1";
-
-// import * as bozo from "./myModule1";
-// import hello1 from "./myModule1";
-// console.log(bozo.person.name);
-
-// console.log(bozo.sayHello());
-
-// console.log(hello1);
+function getPosts() {
+  http
+    .get("http://localhost:3000/posts")
+    .then(data => ui.showPosts(data))
+    .catch(err => console.log(err));
+}
